@@ -1,0 +1,5 @@
+/tailwind style live update
+npx tailwindcss -i ./src/input.css -o ./src/assets/tailwind.css --watch
+
+/run project
+npm run dev
