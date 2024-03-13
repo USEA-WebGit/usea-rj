@@ -9,10 +9,11 @@ export default {
         "active_color" : "#893B01",
       }
     },
-    fontFamily: {
-      Noto : ["Noto Serif Khmer, sans-serif"],
-      hanuman : ["hanuman, sans-serif"],
-    },
+      fontFamily: {
+        Noto: ["Noto Serif Khmer", "sans-serif"],
+        hanuman: ["hanuman", "sans-serif"],
+        khmer_Mool1: ["khmer_Mool1", "sans-serif"],
+      },
 
   },
   plugins: [],

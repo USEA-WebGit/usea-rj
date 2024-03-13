@@ -3,3 +3,6 @@ npx tailwindcss -i ./src/input.css -o ./src/assets/tailwind.css --watch
 
 /run project
 npm run dev
+
+/install chat.js
+npm install chart.js vue
