@@ -8,6 +8,9 @@
 .menu{
     @apply hover:text-active_color flex text-usea_primary items-center text-left mt-2 p-2 cursor-pointer transition ease-in duration-300;
 }
+.footer_link{
+    @apply hover:text-active_color text-usea_primary cursor-pointer transition ease-in duration-300;
+}
 .text_menu{
     @apply hover:text-active_color flex text-usea_primary items-center text-left mt-2 p-2 cursor-default transition ease-in duration-300;
 }
@@ -30,6 +33,6 @@
 }
 
 @font-face {
-    font-family: 'khmer_Mool1';
-    src: url('./assets/fonts/Khmer_Mool1_Regular.ttf') format('ttf');
+    font-family: 'KHMMOOL';
+    src: url('./assets/fonts/KHMMOOL.ttf') format('ttf');
 }
