@@ -626,6 +626,10 @@ video {
   margin-left: 1.75rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -644,10 +648,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .flex {
@@ -912,16 +912,12 @@ video {
   text-align: center;
 }
 
-.font-Khmer_OS_Battambang {
-  font-family: Khmer_OS_Battambang, sans-serif;
+.font-Khmer_OS_Muol_Light {
+  font-family: Khmer_OS_Muol_Light, sans-serif;
 }
 
 .font-hanuman {
   font-family: hanuman, sans-serif;
-}
-
-.font-Khmer_OS_Muol_Light {
-  font-family: Khmer_OS_Muol_Light, sans-serif;
 }
 
 .text-2xl {
@@ -952,21 +948,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm\/\[16px\] {
-  font-size: 0.875rem;
-  line-height: 16px;
-}
-
-.text-xs\/\[16px\] {
-  font-size: 0.75rem;
-  line-height: 16px;
-}
-
-.text-xs\/\[12px\] {
-  font-size: 0.75rem;
-  line-height: 12px;
 }
 
 .font-bold {
