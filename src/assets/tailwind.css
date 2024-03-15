@@ -646,6 +646,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -695,6 +699,10 @@ video {
   width: 7rem;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .w-40 {
   width: 10rem;
 }
@@ -738,6 +746,10 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-x-3 {
@@ -900,8 +912,16 @@ video {
   text-align: center;
 }
 
+.font-Khmer_OS_Battambang {
+  font-family: Khmer_OS_Battambang, sans-serif;
+}
+
 .font-hanuman {
   font-family: hanuman, sans-serif;
+}
+
+.font-Khmer_OS_Muol_Light {
+  font-family: Khmer_OS_Muol_Light, sans-serif;
 }
 
 .text-2xl {
@@ -929,12 +949,36 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm\/\[16px\] {
+  font-size: 0.875rem;
+  line-height: 16px;
+}
+
+.text-xs\/\[16px\] {
+  font-size: 0.75rem;
+  line-height: 16px;
+}
+
+.text-xs\/\[12px\] {
+  font-size: 0.75rem;
+  line-height: 12px;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-active_color {
@@ -1130,9 +1174,26 @@ video {
 }
 
 @font-face {
-  font-family: 'KHMMOOL';
+  font-family: "Khmer_OS_Muol_Light";
 
-  src: url('./assets/fonts/KHMMOOL.ttf') format('ttf');
+  src: url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.eot");
+
+  src: url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.svg#Khmer OS Muol Light")format("svg");
+}
+
+@font-face {
+  font-family: "Khmer_OS_Battambang";
+
+  src: url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.eot");
+
+  src: url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.ttf")format("truetype"),
 }
 
 @media (min-width: 768px) {
@@ -1310,6 +1371,10 @@ video {
     margin-bottom: 0.75rem;
   }
 
+  .md\:ml-1 {
+    margin-left: 0.25rem;
+  }
+
   .md\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -1457,6 +1522,11 @@ video {
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
