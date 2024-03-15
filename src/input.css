@@ -33,6 +33,20 @@
 }
 
 @font-face {
-    font-family: 'KHMMOOL';
-    src: url('./assets/fonts/KHMMOOL.ttf') format('ttf');
+    font-family: "Khmer_OS_Muol_Light";
+    src: url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.eot");
+    src: url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/079fe5217b2c7dac6ba6e22f6a3c5ccc.svg#Khmer OS Muol Light")format("svg");
+}
+
+@font-face {
+    font-family: "Khmer_OS_Battambang";
+    src: url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.eot");
+    src: url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5fe1966782f6a72ba54dcbbdab764cd1.ttf")format("truetype"),
 }
