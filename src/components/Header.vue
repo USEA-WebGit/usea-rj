@@ -75,7 +75,7 @@ export default{
 
   <div class="md:container justify-center items-center mx-auto">
     <div class="sm:h-40 overflow-hidden items-center">
-      <div class="w-11/12 lg:w-10/12 xl:w-7/12 2xl:w-5/12 h-full mx-auto">
+      <div class="w-10/12 lg:w-10/12 xl:w-7/12 2xl:w-5/12 h-full mx-auto">
         <img class="h-full w-full" src="../assets/img/logo/journal-title.png" alt="journal-title">
       </div>
     </div>
