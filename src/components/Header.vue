@@ -1,7 +1,7 @@
 <script>
 import { ref } from 'vue';
-import { gsap } from 'gsap';
-export default{
+
+export default {
   props: [],
   data() {
     return {
@@ -44,10 +44,6 @@ export default{
     prevSlide() {
       const prevIndex = this.currentIndex;
       this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-    },
-    animateSlides(prevIndex, nextIndex) {
-      const prevSlide = this.$refs.slides[prevIndex];
-      const nextSlide = this.$refs.slides[nextIndex];
     }
   },
   beforeDestroy() {
@@ -55,6 +51,20 @@ export default{
   }
 };
 </script>
+
+<style scoped>
+.active-slide {
+  transform: translateX(0);
+}
+
+.prev-slide {
+  transform: translateX(-100%);
+}
+
+.next-slide {
+  transform: translateX(100%);
+}
+</style>
 
 <template>
 <div class="wrapper">
@@ -81,45 +91,86 @@ export default{
     </div>
   </div>
 
-  <div class="slider border bg-container_color">
-    <div class="w-full h-64 md:h-screen relative flex items-center">
-      <div v-for="(slide, index) in slides" :key="index" :class="{ 'active-slide': currentIndex === index }" class="h-full w-full relative"
-        ref="slides"
-        v-show="currentIndex === index"
-      >
-        <img class="h-full w-full" :src="slide.imageSrc" :alt="slide.imageAlt" />
-
-        <div class="absolute w-full h-full top-0 flex items-center">
-          <div class="px-3 md:container text-white mx-auto">
-            <div class="w-8/12 md:w-6/12 opacity-90">
-              <div class="text-lg sm:text-xl md:text-2xl font-semibold mb-1 md:mb-3 lg:mb-4 text-center">
-                {{ slide.title }}
+  <div class="slider bg-container_color">
+  <div class="w-full h-64 md:h-screen flex items-center relative">
+    <!-- Slides -->
+    <transition name="slide-fade" mode="out-in">
+        <div
+          :key="currentIndex"
+          class="w-full h-64 md:h-screen flex items-center relative"
+        >
+          <!-- Slides -->
+          <div
+            v-for="(slide, index) in slides"
+            :key="index"
+            :class="{
+              'active-slide': currentIndex === index,
+              'prev-slide': currentIndex - 1 === index,
+              'next-slide': currentIndex + 1 === index,
+              'hidden': currentIndex !== index && currentIndex - 1 !== index && currentIndex + 1 !== index
+            }"
+            class="absolute inset-0 flex items-center"
+            ref="slides"
+            transition="slide-fade"
+          >
+            <!-- Slide content goes here -->
+            <img class="h-full w-full object-cover" :src="slide.imageSrc" :alt="slide.imageAlt" />
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+              <div class="px-3 md:container text-white">
+                <div class="w-8/12 md:w-6/12 opacity-90">
+                  <div class="text-lg sm:text-xl md:text-2xl font-semibold mb-1 md:mb-3 lg:mb-4 text-center">
+                    {{ slide.title }}
+                  </div>
+                  <p class="text-sm md:text-base">{{ slide.text }}</p>
+                  <div class="btn w-28 text-sm sm:text-base sm:w-32 mt-2 sm:mt-3 md:mt-4 text-center hover:text-white">Read more</div>
+                </div>
               </div>
-              <p class="text-sm md:text-base">{{ slide.text }}</p>
-              <div class="btn w-28 text-sm sm:text-base sm:w-32 mt-2 sm:mt-3 md:mt-4 text-center hover:text-white">Read more</div>
             </div>
           </div>
-          </div>
         </div>
-      <div
-        class="absolute items-center cursor-pointer sm:text-white text-2xl left-10 text-transparent hover:text-usea_primary"
-        @click="prevSlide"
-      >
-        <i class="fa-solid fa-chevron-left"></i>
-      </div>
-      <div
-        class="absolute items-center cursor-pointer sm:text-white text-2xl right-10 text-transparent hover:text-usea_primary"
-        @click="nextSlide"
-      >
-        <i class="fa-solid fa-chevron-right"></i>
-      </div>
+      </transition>
+    <!-- Navigation buttons -->
+    <div
+      class="absolute items-center cursor-pointer sm:text-white text-2xl left-10 text-transparent hover:text-usea_primary"
+      @click="prevSlide"
+    >
+      <i class="fa-solid fa-chevron-left"></i>
+    </div>
+    <div
+      class="absolute items-center cursor-pointer sm:text-white text-2xl right-10 text-transparent hover:text-usea_primary"
+      @click="nextSlide"
+    >
+      <i class="fa-solid fa-chevron-right"></i>
     </div>
   </div>
-  
+</div>
+
 </div>
 
 </template>
 
 <style scoped>
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: opacity 0.5s ease;
+}
 
+.slide-fade-enter, .slide-fade-leave-to /* .slide-fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.active-slide {
+  transform: translateX(0);
+}
+
+.prev-slide {
+  transform: translateX(-100%);
+}
+
+.next-slide {
+  transform: translateX(100%);
+}
+
+.hidden {
+  display: none;
+}
 </style>

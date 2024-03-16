@@ -46,10 +46,6 @@
               <img src="../assets/icon/www.png" alt="usea website address">
             </a>
           </div>
-           <!-- <i class="ml-3 text-xl hover:text-red-600 md:text-2xl fa-brands fa-instagram"></i>
-           <i class="ml-3 text-xl md:text-2xl hover:text-blue-900 fa-brands fa-telegram"></i>
-           <i class="ml-3 text-xl md:text-2xl hover:text-red-600 fa-brands fa-youtube"></i>
-           <i class="ml-3 text-xl md:text-2xl hover:text-green-600 fa-solid fa-globe"></i> -->
         </div>
       </div>
 
