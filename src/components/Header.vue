@@ -146,9 +146,4 @@ export default {
 .active-slide {
   transform: translateX(0);
 }
-
-.hidden {
-  display: none;
-}
 </style>
-ង

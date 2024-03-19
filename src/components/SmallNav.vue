@@ -14,31 +14,25 @@
               <li class="menu" @click="toggleMenu('home')">
               <i class="fa-solid fa-book-open"></i> <div class="ml-2 md:ml-3">ការបោះពុម្ភ</div> <i v-if="activeMenu !== 'home'" class="ml-2 fa-solid fa-angle-down"></i> <i class="ml-2 md:ml-3 fa-solid fa-angle-right" v-else></i>
             </li>
-            <div class="text-sm md:text-base lg:text-lg bg-container_color rounded-md p-2" :class="{'hidden': activeMenu !== 'home'}">
-              <ul>
-                <li class="d-menu">ក្រុមព្រឹក្សាទស្សនាវដ្ដីស្រាវជ្រាវ</li>
-                <li class="d-menu">គោលការណ៍នៃការបោះពុម្ភ</li>
-                <li class="d-menu">ក្រមសីលធម៌នៃការបោះពុម្ភ</li>
-                <li class="d-menu">អត្ថប្រយោជន៍នៃការណ៍បោះពុម្ភ</li>
-              </ul>
+            <div class="ml-3 list-menu" :class="{'show': activeMenu == 'home'}">
+                <li class="menu">ក្រុមព្រឹក្សាទស្សនាវដ្ដីស្រាវជ្រាវ</li>
+                <li class="menu">គោលការណ៍នៃការបោះពុម្ភ</li>
+                <li class="menu">ក្រមសីលធម៌នៃការបោះពុម្ភ</li>
+                <li class="menu">អត្ថប្រយោជន៍នៃការណ៍បោះពុម្ភ</li>
             </div>
               <li class="menu" @click="toggleMenu('study')">
               <i class="fa-solid fa-book"></i> <div class="ml-2 md:ml-3">សេចក្ដីណែនាំ</div> <i v-if="activeMenu !== 'study'" class="ml-2 fa-solid fa-angle-down"></i> <i v-else class="ml-2 md:ml-3 fa-solid fa-angle-right"></i>
             </li>
-            <div class="text-sm md:text-base lg:text-lg bg-container_color rounded-md p-2" :class="{'hidden': activeMenu !== 'study'}">
-              <ul>
-                <li class="d-menu">សេចក្ដីណែនាំអ្នកនិពន្ធ</li>
-                <li class="d-menu">សេចក្ដីណែនាំអ្នកត្រួតពិនិត្យ</li>
-              </ul>
+            <div class="ml-3 list-menu" :class="{'show': activeMenu == 'study'}">
+                <li class="menu">សេចក្ដីណែនាំអ្នកនិពន្ធ</li>
+                <li class="menu">សេចក្ដីណែនាំអ្នកត្រួតពិនិត្យ</li>
             </div>
             <li class="menu" @click="toggleMenu('check')">
             <i class="fa-solid fa-spinner"></i> <div class="ml-2 md:ml-3">ដំណើរការ</div> <i v-if="activeMenu !== 'check'" class="ml-2 fa-solid fa-angle-down"></i> <i v-else class="ml-2 md:ml-3 fa-solid fa-angle-right"></i>
             </li>
-            <div class="text-sm md:text-base lg:text-lg bg-container_color rounded-md p-2" :class="{'hidden': activeMenu !== 'check'}">
-              <ul>
-                <li class="d-menu">បញ្ជូនអត្ថបទស្រាវជ្រាវ</li>
-                <li class="d-menu">ការត្រួពិនិត្យស្រាវជ្រាវ</li>
-              </ul>
+            <div class="ml-3 list-menu" :class="{'show': activeMenu == 'check'}">
+                <li class="menu">បញ្ជូនអត្ថបទស្រាវជ្រាវ</li>
+                <li class="menu">ការត្រួពិនិត្យស្រាវជ្រាវ</li>
             </div>
             <li class="menu">
               <router-link :to="{name : 'home'}" class="w-100 flex items-center"><i class="fa-solid fa-arrow-down-a-z"></i> <div class="ml-2 md:ml-3">សន្ទានុក្រមស្រាវជ្រាវ</div></router-link>
@@ -107,7 +101,7 @@
             </div>
 
           </div>
-          <div class="text-xl left-0 text-active_color hover:text-usea_primary cursor-pointer sticky top-1" @click="toggleSidebar"><i class="fa-regular fa-circle-xmark"></i></div>
+          <div class="text-xl left-0 ml-2 text-active_color hover:text-usea_primary cursor-pointer sticky top-1" @click="toggleSidebar"><i class="fa-regular fa-circle-xmark"></i></div>
         </div>
         <div>
           
@@ -184,6 +178,14 @@ methods: {
 </script>
 
 <style scoped>
+.list-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
 
+.list-menu.show {
+  max-height: 400px; /* Adjust the max-height value as needed */
+}
 </style>
   
