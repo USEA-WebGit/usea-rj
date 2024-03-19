@@ -20,14 +20,15 @@ export default {
         },
         {
           imageSrc: "./src/assets/img/slide/slide3.jpg",
-          imageAlt: "Slide 2",
+          imageAlt: "Slide 3",
           title: "Hello Vue",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
         }
       ],
       currentIndex: 0,
       intervalId: null,
-      isFirstSlide: true // Flag to track if it's the first slide
+      isFirstSlide: true, // Flag to track if it's the first slide
+      direction: 'next' // Initialize direction property
     };
   },
   mounted() {
@@ -40,31 +41,17 @@ export default {
     nextSlide() {
       const prevIndex = this.currentIndex;
       this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+      this.direction = 'next'; // Set the direction to 'next'
     },
     prevSlide() {
       const prevIndex = this.currentIndex;
       this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+      this.direction = 'prev'; // Set the direction to 'prev'
     }
-  },
-  beforeDestroy() {
-    clearInterval(this.intervalId);
+
   }
 };
 </script>
-
-<style scoped>
-.active-slide {
-  transform: translateX(0);
-}
-
-.prev-slide {
-  transform: translateX(-100%);
-}
-
-.next-slide {
-  transform: translateX(100%);
-}
-</style>
 
 <template>
 <div class="wrapper">
@@ -77,7 +64,7 @@ export default {
         <i class="fa-solid fa-envelope ml-2"></i>
         <div class="ml-1 md:ml-2">usea.rj@usea.edu.kh</div>
       </div>
-      <div class="sm:flex hidden">
+      <div class="hidden sm:flex">
         <div class="btn">Register</div><div class="btn ml-1 md:ml-3">Login</div>
       </div>
     </div>
@@ -92,26 +79,20 @@ export default {
   </div>
 
   <div class="slider bg-container_color">
-  <div class="w-full h-64 md:h-screen flex items-center relative">
-    <!-- Slides -->
-    <transition name="slide-fade" mode="out-in">
-        <div
-          :key="currentIndex"
-          class="w-full h-64 md:h-screen flex items-center relative"
-        >
+    <div class="w-full h-64 md:h-screen flex items-center relative overflow-x-hidden">
+      <!-- Slides -->
+      <transition name="slide-fade">
+        <div :key="currentIndex" class="w-full h-64 md:h-screen relative">
           <!-- Slides -->
-          <div
-            v-for="(slide, index) in slides"
-            :key="index"
+          <div v-for="(slide, index) in slides" :key="index"
             :class="{
               'active-slide': currentIndex === index,
               'prev-slide': currentIndex - 1 === index,
               'next-slide': currentIndex + 1 === index,
               'hidden': currentIndex !== index && currentIndex - 1 !== index && currentIndex + 1 !== index
             }"
-            class="absolute inset-0 flex items-center"
+            class="absolute inset-0"
             ref="slides"
-            transition="slide-fade"
           >
             <!-- Slide content goes here -->
             <img class="h-full w-full object-cover" :src="slide.imageSrc" :alt="slide.imageAlt" />
@@ -129,39 +110,22 @@ export default {
           </div>
         </div>
       </transition>
-    <!-- Navigation buttons -->
-    <div
-      class="absolute items-center cursor-pointer sm:text-white text-2xl left-10 text-transparent hover:text-usea_primary"
-      @click="prevSlide"
-    >
-      <i class="fa-solid fa-chevron-left"></i>
-    </div>
-    <div
-      class="absolute items-center cursor-pointer sm:text-white text-2xl right-10 text-transparent hover:text-usea_primary"
-      @click="nextSlide"
-    >
-      <i class="fa-solid fa-chevron-right"></i>
+      <!-- Navigation buttons -->
+      <div class="absolute items-center cursor-pointer sm:text-white text-2xl left-10 text-transparent hover:text-usea_primary"
+        @click="prevSlide">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="absolute items-center cursor-pointer sm:text-white text-2xl right-10 text-transparent hover:text-usea_primary"
+        @click="nextSlide">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
     </div>
   </div>
-</div>
 
 </div>
-
 </template>
 
 <style scoped>
-.slide-fade-enter-active, .slide-fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.slide-fade-enter, .slide-fade-leave-to /* .slide-fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-
-.active-slide {
-  transform: translateX(0);
-}
-
 .prev-slide {
   transform: translateX(-100%);
 }
@@ -170,7 +134,21 @@ export default {
   transform: translateX(100%);
 }
 
+/* Adjust animations based on direction */
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX({{ direction === 'next' ? '100%' : '-100%' }});
+}
+
+.active-slide {
+  transform: translateX(0);
+}
+
 .hidden {
   display: none;
 }
 </style>
+ង

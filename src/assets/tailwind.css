@@ -544,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1289,12 +1293,24 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
   .sm\:mt-3 {
     margin-top: 0.75rem;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:h-16 {
