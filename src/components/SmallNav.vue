@@ -96,6 +96,9 @@
                     </div>
                   </div>
                   <!-- end navigation -->
+                  <div class="flex mt-5 mb-1 pb-5 w-fit mx-auto">
+                      <div class="btn">Register</div><div class="btn ml-1 md:ml-3">Login</div>
+                  </div>
                 </div>
 
             </div>
