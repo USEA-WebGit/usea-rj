@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="lg:grid-cols-5 lg:grid gap-2 lg:gap-y-2 xl:gap-y-0 py-10 h-fit">
+    <div class="lg:grid-cols-5 lg:grid xl:gap-x-2 lg:gap-y-2 xl:gap-y-0 py-10 h-fit">
       <div class="lg:col-span-5 xl:col-span-2">
         <div>
           <img src="../assets/img/logo/journal-logo.png" alt="usea_journal-logo" class="w-24 md:w-36 mx-auto">
         </div>
-        <div class="xl:text-xl lg:text-lg md:text-md text-sm sm:text-base mx-auto font-Khmer_OS_Muol_Light mt-3 text-usea_primary px-1">
+        <div class="xl:text-lg lg:text-base md:text-base text-sm sm:text-base mx-auto font-Khmer_OS_Muol_Light mt-3 text-usea_primary">
           <div class="text-center leading-6 md:leading-10">ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អុីសថ៍អេយសៀ</div>
           <div class="text-center uppercase mt-1 md:mt-1 xl:mt-3 leading-5 md:leading-9">University of South-East Asia Research Journal</div>
         </div>
