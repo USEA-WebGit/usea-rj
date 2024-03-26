@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="lg:grid-cols-5 lg:grid xl:gap-x-2 lg:gap-y-2 xl:gap-y-0 py-10 h-fit">
+    <div class="lg:grid-cols-5 lg:grid xl:gap-x-2 lg:gap-y-2 xl:gap-y-0 py-10 h-fit bg-white">
       <div class="lg:col-span-5 xl:col-span-2">
         <div>
           <img src="../assets/img/logo/journal-logo.png" alt="usea_journal-logo" class="w-24 md:w-36 mx-auto">
@@ -13,7 +13,7 @@
 
       <div class="font-hanuman mt-6 md:mt-4 lg:col-span-2 xl:col-span-1">
         <div class="font-bold text-black text-lg md:text-xl lg:text-2xl mx-auto w-fit mt-3 md:mt-0">ទំនាក់ទំនងសារអេឡិចត្រូនិច</div>
-        <div class="flex text-lg md:text-xl w-fit mx-auto mt-2 justify-center"><input type="email" placeholder="example@gmail.com" class="p-2 border rounded-md w-4/5"> <button type="submit" class="py-1 px-4 bg-yellow-500 rounded-md"><i class="my-auto fa-solid fa-play"></i></button></div>
+        <div class="flex text-lg md:text-xl w-fit mx-auto mt-2 justify-center"><input type="email" placeholder="example@gmail.com" class="p-2 border rounded-md w-4/5 bg-white"> <button type="submit" class="py-1 px-4 bg-yellow-500 rounded-md"><i class="my-auto fa-solid fa-play"></i></button></div>
         <div class="font-bold text-black text-lg md:text-xl lg:text-2xl mx-auto w-fit mt-4 md:mt-20">ទំនាក់ទំនងបណ្ដាញសង្គម</div>
         <div class="flex text-lg md:text-xl w-fit mx-auto mt-2">
           <div class="w-7 h-7 lg:w-10 lg:h-10">

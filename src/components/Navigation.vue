@@ -3,10 +3,10 @@
     <div class="w-fit sticky top-0 rounded-3xl bg-white p-6 shadow-md">
       <ul class="font-hanuman md:text-xl lg:text-xl xl:text-2xl text-center text-nowrap w-fit text-sm sm:text-base mx-auto w-full">
           <li class="menu">
-            <router-link :to="{name : 'home'}" class="w-100 flex items-center"><i class="fa-solid fa-house-chimney"></i> <div class="ml-2 md:ml-3">ទំព័រដើម</div></router-link>
+            <router-link :to="{name : 'home'}" class="w-full flex items-center"><i class="fa-solid fa-house-chimney"></i> <div class="ml-2 md:ml-3">ទំព័រដើម</div></router-link>
           </li>
           <li class="menu">
-            <router-link :to="{name : 'about'}" class="w-100 flex items-center"> <i class="fa-solid fa-bars"></i><div class="ml-2 md:ml-3 my-auto">អំពីទស្សនាវដ្ដីស្រាវជ្រាវ</div></router-link>
+            <router-link :to="{name : 'about'}" class="w-full flex items-center"> <i class="fa-solid fa-bars"></i><div class="ml-2 md:ml-3 my-auto">អំពីទស្សនាវដ្ដីស្រាវជ្រាវ</div></router-link>
           </li>
           <li class="menu" @click="toggleMenu('home')">
             <i class="fa-solid fa-book-open"></i> <div class="ml-2 md:ml-3">ការបោះពុម្ភ</div> <i v-if="activeMenu !== 'home'" class="ml-2 fa-solid fa-angle-down"></i> <i class="ml-2 md:ml-3 fa-solid fa-angle-right" v-else></i>
@@ -32,7 +32,7 @@
               <li class="menu">ការត្រួពិនិត្យស្រាវជ្រាវ</li>
           </div>
           <li class="menu">
-            <router-link :to="{name : 'home'}" class="w-100 flex items-center"><i class="fa-solid fa-arrow-down-a-z"></i> <div class="ml-2 md:ml-3">សន្ទានុក្រមស្រាវជ្រាវ</div></router-link>
+            <router-link :to="{name : 'home'}" class="w-full flex items-center"><i class="fa-solid fa-arrow-down-a-z"></i> <div class="ml-2 md:ml-3">សន្ទានុក្រមស្រាវជ្រាវ</div></router-link>
           </li>
       </ul>
       <div class="mt-4 border-t-2 font-hanuman md:text-xl lg:text-xl xl:text-2xl text-nowrap mx-auto h-full w-fit text-sm sm:text-base">
