@@ -6,7 +6,7 @@
       </div>
       <div class="flex bg-white rounded-lg justify-center items-center mt-10 py-10">
         <div class="text-center mb-10">
-          <img style="max-height: 300px; max-width: 900px;" src="../assets/img/logo/journal-logo.png" alt="journal logo">
+          <img src="../assets/img/logo/journal-logo.png" alt="journal logo" class="max-h-[300px] max-w-[900px]">
           <p class="text-usea_primary font-hanuman text-2xl font-bold">និមិត្តសញ្ញា</p>
         </div>
         <div class="">
