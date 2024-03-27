@@ -22,6 +22,9 @@
 .content{
     @apply bg-usea_primary text-white px-5 mt-3 md:px-2;
 }
+.card_button{
+    @apply text-usea_primary px-3 py-1 border-2 border-usea_primary rounded-lg mr-3 mt-2 hover:bg-usea_primary hover:text-white transition-all duration-300 ease-in-out;
+}
 
 @font-face {
     font-family: 'hanuman';
