@@ -29,7 +29,6 @@
         </li>
         <div class="ml-5 list-menu" :class="{ show: activeMenu == 'home' }">
           <li class="menu">
-<<<<<<< HEAD
             <router-link :to="{ name: 'journal-board' }">
               ក្រុមព្រឹក្សាទស្សនាវដ្ដីស្រាវជ្រាវ
             </router-link>
@@ -38,21 +37,11 @@
             <router-link :to="{ name: 'publication-policy' }">
               គោលការណ៍នៃការបោះពុម្ភ
             </router-link>
-=======
-            <router-link :to="{name : 'home'}" class="w-full flex items-center"><i class="fa-solid fa-house-chimney"></i> <div class="ml-2 md:ml-3">ទំព័រដើម</div></router-link>
           </li>
           <li class="menu">
-            <router-link :to="{name : 'about'}" class="w-full flex items-center"> <i class="fa-solid fa-bars"></i><div class="ml-2 md:ml-3 my-auto">អំពីទស្សនាវដ្ដីស្រាវជ្រាវ</div></router-link>
->>>>>>> 5b1ba7ea9a88396c9058577eced95a7492f73cf6
-          </li>
-          <li class="menu">
-<<<<<<< HEAD
             <router-link :to="{ name: 'publication-ethics' }">
               ក្រមសីលធម៌នៃការបោះពុម្ភ
             </router-link>
-=======
-            <router-link :to="{name : 'home'}" class="w-full flex items-center"><i class="fa-solid fa-arrow-down-a-z"></i> <div class="ml-2 md:ml-3">សន្ទានុក្រមស្រាវជ្រាវ</div></router-link>
->>>>>>> 5b1ba7ea9a88396c9058577eced95a7492f73cf6
           </li>
           <li class="menu">
             <router-link :to="{ name: 'publication-benefit' }">
