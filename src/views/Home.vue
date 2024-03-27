@@ -85,30 +85,160 @@
           </div>
         </div>
       </div>
+      <!-- end issue -->
 
       <div class="w-full mt-32">
-        <div class="w-fit mx-auto text-center text-active_color font-hanuman font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">អត្ថបទ និង ការចេញផ្សាយថ្មីៗ</div>
-        <div class="w-40 lg:w-60 border-b-2 lg:border-b-4 border-b-active_color mx-auto"></div>
+        <div class="w-fit mx-auto text-center text-active_color font-hanuman font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">អំពីទស្សនាវដ្ដីស្រាវជ្រាវ</div>
+        <div class="w-20 lg:w-60 border-b-2 lg:border-b-4 border-b-active_color mx-auto"></div>
       </div>
 
-      <div class="w-full mt-20 bg-white rounded-xl pt-10 px-16 pb-10 font-hanuman font-semibold">
+      <div class="w-full mt-20 bg-white rounded-xl pt-10 px-5 lg:px-16 pb-10 font-hanuman font-semibold">
         <div class="w-fit mx-auto border rounded-lg">
           <img src="../assets/img/logo/journal-logo.png" alt="usea research journal logo" class="w-[180px] h-[184px]">
           <div class="text-usea_primary text-xl lg:text-2xl font-bold text-center py-2">និមិត្តសញ្ញា</div>
         </div>
 
-        <div class="mt-10 px-20">
-          <div>
-            ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ មានអក្សរកាត់ជាខេមរភាសា “”ទ.ស.ស.ស.អ.” និងមានឈ្មោះជាភាសាអង់គ្លេស USEA Research Journal ដែលមានអក្សរកាត់ “USEA RJ”។ ទស្សនាវដ្តីស្រាវជ្រាវនេះ គឺជាទស្សនាវដ្តីស្រាវជ្រាវបោះពុម្ពផ្សាយតាមអនឡាញពីរដង ក្នុងមួយឆ្នាំជាខេមរភាសា និង/ឬភាសាអង់គ្លេស។ រាល់អត្ថបទ ស្រាវជ្រាវដែលបានបោះពុម្ពផ្សាយតាមទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ គឺមិនត្រូវបានគិតថ្លៃសេវាឡើយ ។
+        <div class="mt-10 px-2 lg:px-20 text-lg text-black">
+          <span class="lg:pl-8">
+            ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អុីសថ៍អេយសៀ មានអក្សរកាត់ជាខេមរភាសា “ទ.ស.ស.ស.អ.” និងមានឈ្មោះជាភាសាអង់គ្លេសថា
+          </span>
+          <span>
+            USEA Research Journal ដែលមានអក្សរកាត់ “USEA RJ”។ ទស្សនាវដ្តីស្រាវជ្រាវនេះ គឺជាទស្សនាវដ្តីស្រាវជ្រាវបោះពុម្ពផ្សាយតាមអនឡាញពីរដង ក្នុងមួយឆ្នាំជាខេមរភាសា និងភាសាអង់គ្លេស។ រាល់អត្ថបទ ស្រាវជ្រាវដែលបានបោះពុម្ពផ្សាយតាមទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អុីសថ៍អេយសៀ គឺមិនត្រូវបានគិតថ្លៃសេវាឡើយ ។
+          </span>
+          <span class="lg:pl-8 lg:inline-block">
+            សម្រាប់គោលបំណងគឺ ដើម្បីចូលរួមចំណែកលើកកម្ពស់ការស្រាវជ្រាវនៅសាកលវិទ្យាល័យ សៅស៍អុីសថ៍អេយសៀ និងនៅ ក្នុងព្រះរាជាណាចក្រ កម្ពុជា
+          </span>
+          <span>
+             តាមរយៈការបោះពុម្ពផ្សាយអត្ថបទស្រាវជ្រាវសម្រាប់បង្កើនធនធាន សិក្សាដែលគាំទ្រដល់ការសិក្សា និងការ ស្រាវជ្រាវ បែបវិទ្យាសាស្ត្រ...
+          </span>
+        </div>
+
+        <div class="w-fit mx-auto mt-16">
+          <router-link :to="{name : 'home'}" class="card_button">Read More</router-link>
+        </div>
+      </div>
+      <!-- end About rj -->
+
+      <!-- start rj list -->
+      <div class="flex justify-between mt-32 lg:mt-40">
+        <div class="">
+          <div class="w-fit mx-auto text-center text-active_color font-hanuman font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">បញ្ជីទស្សនាវដ្តីដែលមានលិបិក្រមឆ្នាំ ២០២៣</div>
+          <div class="w-24 lg:w-60 border-b-2 lg:border-b-4 border-b-active_color"></div>
+        </div>
+        <div class="">
+          <div class="w-fit mx-auto text-center text-active_color font-hanuman font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">មើលទាំងអស់</div>
+          <div class="w-12 lg:w-20 border-b-2 lg:border-b-4 border-b-active_color"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-20 font-hanuman text-lg">
+        <div class="col-span-1 flex items-center justify-between p-5 bg-white rounded-xl">
+          <img src="../assets/img/content/smallcardimg.png" alt="card demo">
+          <div class="ml-5 lg:ml-0">
+            <div class="flex gap-2">
+              <div>
+                
+              </div>
+              <div>ទិនានុប្បវត្តិអន្តរជាតិនៃបណ្តាញកុំព្យូទ័រ និងកម្មវិធី</div>
+            </div>
+            <div class="flex gap-2">
+              <div>ចំណងជើងទស្សនាវដ្ដី:</div>
+              <div>ទិនានុប្បវត្តិអន្តរជាតិនៃបណ្តាញកុំព្យូទ័រ និងកម្មវិធី</div>
+            </div>
+            <div class="flex gap-2">
+              <div>E-Issn No:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>P-Issn No:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>ភាសា:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>អ្នកបោះពុម្ពផ្សាយ:</div>
+              <div>សាកលវិទ្យាល័យ សៅរ៍អុីសថ៍អេយសៀ</div>
+            </div>
           </div>
-          <div>
-            សម្រាប់គោលបំណងគឺ ដើម្បីចូលរួមចំណែកលើកកម្ពស់ការស្រាវជ្រាវនៅសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ និងនៅ ក្នុងព្រះរាជាណាចក្រ កម្ពុជា តាមរយៈការបោះពុម្ពផ្សាយអត្ថបទស្រាវជ្រាវសម្រាប់បង្កើនធនធាន សិក្សាដែលគាំទ្រដល់ការសិក្សា និងការ ស្រាវជ្រាវ បែបវិទ្យាសាស្រ្ត...
+        </div>
+        <div class="col-span-1 flex items-center justify-between p-5 bg-white rounded-xl">
+          <img src="../assets/img/content/smallcardimg.png" alt="card demo">
+          <div class="ml-5 lg:ml-0">
+            <div class="flex gap-2">
+              <div>ចំណងជើងទស្សនាវដ្ដី:</div>
+              <div>ទិនានុប្បវត្តិអន្តរជាតិនៃបណ្តាញកុំព្យូទ័រ និងកម្មវិធី</div>
+            </div>
+            <div class="flex gap-2">
+              <div>E-Issn No:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>P-Issn No:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>ភាសា:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>អ្នកបោះពុម្ពផ្សាយ:</div>
+              <div>សាកលវិទ្យាល័យ សៅរ៍អុីសថ៍អេយសៀ</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 flex items-center justify-between p-5 bg-white rounded-xl">
+          <img src="../assets/img/content/smallcardimg.png" alt="card demo">
+          <div class="ml-5 lg:ml-0">
+            <div class="flex gap-2">
+              <div>ចំណងជើងទស្សនាវដ្ដី:</div>
+              <div>ទិនានុប្បវត្តិអន្តរជាតិនៃបណ្តាញកុំព្យូទ័រ និងកម្មវិធី</div>
+            </div>
+            <div class="flex gap-2">
+              <div>E-Issn No:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>P-Issn No:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>ភាសា:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>អ្នកបោះពុម្ពផ្សាយ:</div>
+              <div>សាកលវិទ្យាល័យ សៅរ៍អុីសថ៍អេយសៀ</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 flex items-center justify-between p-5 bg-white rounded-xl">
+          <img src="../assets/img/content/smallcardimg.png" alt="card demo">
+          <div class="ml-5 lg:ml-0">
+            <div class="flex gap-2">
+              <div>ចំណងជើងទស្សនាវដ្ដី:</div>
+              <div>ទិនានុប្បវត្តិអន្តរជាតិនៃបណ្តាញកុំព្យូទ័រ និងកម្មវិធី</div>
+            </div>
+            <div class="flex gap-2">
+              <div>E-Issn No:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>P-Issn No:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>ភាសា:</div>
+              <div>2394-6377</div>
+            </div>
+            <div class="flex gap-2">
+              <div>អ្នកបោះពុម្ពផ្សាយ:</div>
+              <div>សាកលវិទ្យាល័យ សៅរ៍អុីសថ៍អេយសៀ</div>
+            </div>
           </div>
         </div>
 
-        <div >
-          <router-link :to="{name : 'home'}" class="card_button">Read More</router-link>
-        </div>
       </div>
 
     </div>
