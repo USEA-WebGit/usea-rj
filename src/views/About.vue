@@ -4,7 +4,7 @@
       <div class="w-fit mx-auto border-b-2 border-b-active_color text-active_color text-center font-hanuman font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
         អំពីទស្សនាវដ្ដីស្រាវជ្រាវ
       </div>
-      <div class="flex bg-white rounded-lg justify-center items-center mt-10 py-10">
+      <div class="flex bg-red-500 rounded-lg justify-center items-center mt-10 py-10">
         <div class="text-center mb-10">
           <img src="../assets/img/logo/journal-logo.png" alt="journal logo" class="max-h-[300px] max-w-[900px]">
           <p class="text-usea_primary font-hanuman text-2xl font-bold">និមិត្តសញ្ញា</p>
