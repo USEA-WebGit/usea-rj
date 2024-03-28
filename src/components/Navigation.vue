@@ -2,7 +2,7 @@
   <div class="mb-5 md:left-0 md:mt-20 hidden lg:block">
     <div class="w-fit sticky top-0 rounded-3xl bg-white p-6 shadow-md">
       <ul
-        class="font-hanuman md:text-xl lg:text-xl xl:text-2xl text-center text-nowrap w-fit text-sm sm:text-base mx-auto w-full"
+        class="font-hanuman md:text-xl lg:text-xl xl:text-2xl text-center text-nowrap text-sm sm:text-base mx-auto w-full"
       >
         <li class="menu">
           <router-link :to="{ name: 'home' }" class="w-100 flex items-center">
