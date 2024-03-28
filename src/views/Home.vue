@@ -138,7 +138,7 @@
             <div class="w-fit rounded-lg overflow-hidden">
               <img src="../assets/img/content/smallcardimg.png" alt="card demo" class="w-[66px] h-[84px] md:w-[110px] md:h-[140px]">
             </div>
-            <div class="w-full">
+            <div class="w-full ml-1">
               <div class="flex gap-x-1 items-center justify-center">
                 <ul class="text-right font-semibold text-black">
                   <li class="text-nowrap">ចំណងជើងទស្សនាវដ្ដី:</li>
@@ -163,7 +163,7 @@
             <div class="w-fit">
               <img src="../assets/img/content/smallcardimg.png" alt="card demo" class="w-[66px] h-[84px] md:w-[110px] md:h-[140px]">
             </div>
-            <div class="w-full">
+            <div class="w-full ml-1">
               <div class="flex gap-x-1 items-center justify-center">
                 <ul class="text-right font-semibold text-black">
                   <li class="text-nowrap">ចំណងជើងទស្សនាវដ្ដី:</li>
@@ -191,7 +191,7 @@
             <div class="w-fit">
               <img src="../assets/img/content/smallcardimg.png" alt="card demo" class="w-[66px] h-[84px] md:w-[110px] md:h-[140px]">
             </div>
-            <div class="w-full">
+            <div class="w-full ml-1">
               <div class="flex gap-x-1 items-center justify-center">
                 <ul class="text-right font-semibold text-black">
                   <li class="text-nowrap">ចំណងជើងទស្សនាវដ្ដី:</li>
@@ -216,7 +216,7 @@
             <div class="w-fit">
               <img src="../assets/img/content/smallcardimg.png" alt="card demo" class="w-[66px] h-[84px] md:w-[110px] md:h-[140px]">
             </div>
-            <div class="w-full">
+            <div class="w-full ml-1">
               <div class="flex gap-x-1 items-center justify-center">
                 <ul class="text-right font-semibold text-black">
                   <li class="text-nowrap">ចំណងជើងទស្សនាវដ្ដី:</li>
@@ -245,7 +245,7 @@
             <div class="w-fit">
               <img src="../assets/img/content/smallcardimg.png" alt="card demo" class="w-[66px] h-[84px] md:w-[110px] md:h-[140px]">
             </div>
-            <div class="w-full">
+            <div class="w-full ml-1">
               <div class="flex gap-x-1 items-center justify-center">
                 <ul class="text-right font-semibold text-black">
                   <li class="text-nowrap">ចំណងជើងទស្សនាវដ្ដី:</li>
@@ -270,7 +270,7 @@
             <div class="w-fit">
               <img src="../assets/img/content/smallcardimg.png" alt="card demo" class="w-[66px] h-[84px] md:w-[110px] md:h-[140px]">
             </div>
-            <div class="w-full">
+            <div class="w-full ml-1">
               <div class="flex gap-x-1 items-center justify-center">
                 <ul class="text-right font-semibold text-black">
                   <li class="text-nowrap">ចំណងជើងទស្សនាវដ្ដី:</li>
