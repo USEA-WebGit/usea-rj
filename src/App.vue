@@ -11,7 +11,7 @@ import SmallNav from './components/SmallNav.vue';
   <div>
     <Header/>
     <SmallNav/>
-    <div class="mx-auto px-2 sm:px-6 md:px-11 lg:px-16 bg-container_color pb-5">
+    <div class="mx-auto sm:px-2 md:px-11 lg:px-16 bg-container_color pb-5">
       <div class="md:flex gap-10 justify-between relative bg-container_color">
       <Navigation/>
       <div class="py-3 md:py-0 w-full md:mt-20">

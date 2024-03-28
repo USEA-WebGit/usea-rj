@@ -27,8 +27,6 @@ export default {
       ],
       currentIndex: 0,
       intervalId: null,
-      isFirstSlide: true, // Flag to track if it's the first slide
-      direction: 'next' // Initialize direction property
     };
   },
   mounted() {
@@ -41,12 +39,10 @@ export default {
     nextSlide() {
       const prevIndex = this.currentIndex;
       this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-      this.direction = 'next'; // Set the direction to 'next'
     },
     prevSlide() {
       const prevIndex = this.currentIndex;
       this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-      this.direction = 'prev'; // Set the direction to 'prev'
     }
 
   }
@@ -65,7 +61,7 @@ export default {
         <div class="ml-1 md:ml-2">usea.rj@usea.edu.kh</div>
       </div>
       <div class="hidden sm:flex">
-        <div class="btn">Register</div><div class="btn ml-1 md:ml-3">Login</div>
+        <div class="btn_login">Register</div><div class="btn_login ml-1 md:ml-3">Login</div>
       </div>
     </div>
   </div>
@@ -77,48 +73,29 @@ export default {
       </div>
     </div>
   </div>
-
-  <div class="slider bg-container_color">
-    <div class="w-full h-64 md:h-screen flex items-center relative overflow-x-hidden">
-      <!-- Slides -->
-      <transition name="slide-fade">
-        <div :key="currentIndex" class="w-full h-64 md:h-screen relative">
-          <!-- Slides -->
-          <div v-for="(slide, index) in slides" :key="index"
-            :class="{
-              'active-slide': currentIndex === index,
-              'prev-slide': currentIndex - 1 === index,
-              'next-slide': currentIndex + 1 === index,
-              'hidden': currentIndex !== index && currentIndex - 1 !== index && currentIndex + 1 !== index
-            }"
-            class="absolute inset-0"
-            ref="slides"
-          >
-            <!-- Slide content goes here -->
-            <img class="h-full w-full object-cover" :src="slide.imageSrc" :alt="slide.imageAlt" />
-            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-              <div class="px-3 md:container text-white">
-                <div class="w-8/12 md:w-6/12 opacity-90">
-                  <div class="text-lg sm:text-xl md:text-2xl font-semibold mb-1 md:mb-3 lg:mb-4 text-center">
-                    {{ slide.title }}
-                  </div>
-                  <p class="text-sm md:text-base">{{ slide.text }}</p>
-                  <div class="btn w-28 text-sm sm:text-base sm:w-32 mt-2 sm:mt-3 md:mt-4 text-center hover:text-white">Read more</div>
-                </div>
-              </div>
+  <!-- slide show -->
+  <div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div v-for="(slide, index) in slides" :key="index" class="carousel-item" :class="{ 'active': index === 0 }">
+          <img :src="slide.imageSrc" class="d-block w-100 aspect-video" :alt="slide.imageAlt">
+          <div class="carousel-caption d-none d-md-block text-center position-absolute top-48 start-20 w-6/12">
+            <h1 class="text-2xl">{{ slide.title }}</h1>
+            <p>{{ slide.text }}</p>
+            <div class="mt-3">
+              <router-link :to="{name : 'home'}" class="card_button">Read More</router-link>
             </div>
           </div>
         </div>
-      </transition>
-      <!-- Navigation buttons -->
-      <div class="absolute items-center cursor-pointer sm:text-white text-2xl left-10 text-transparent hover:text-usea_primary"
-        @click="prevSlide">
-        <i class="fa-solid fa-chevron-left"></i>
       </div>
-      <div class="absolute items-center cursor-pointer sm:text-white text-2xl right-10 text-transparent hover:text-usea_primary"
-        @click="nextSlide">
-        <i class="fa-solid fa-chevron-right"></i>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 
@@ -126,24 +103,5 @@ export default {
 </template>
 
 <style scoped>
-.prev-slide {
-  transform: translateX(-100%);
-}
 
-.next-slide {
-  transform: translateX(100%);
-}
-
-/* Adjust animations based on direction */
-.slide-fade-enter-active, .slide-fade-leave-active {
-  transition: transform 0.5s ease;
-}
-
-.slide-fade-enter, .slide-fade-leave-to {
-  transform: translateX({{ direction === 'next' ? '100%' : '-100%' }});
-}
-
-.active-slide {
-  transform: translateX(0);
-}
 </style>
