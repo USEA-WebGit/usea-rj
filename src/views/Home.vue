@@ -122,11 +122,11 @@
       <!-- start rj list -->
       <div class="flex justify-between mt-32 lg:mt-40">
         <div class="">
-          <div class="w-fit mx-auto text-center text-active_color font-hanuman font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">បញ្ជីទស្សនាវដ្តីដែលមានលិបិក្រមឆ្នាំ ២០២៣</div>
+          <div class="w-fit mx-auto text-center text-active_color font-hanuman font-bold text-lg lg:text-xl xl:text-3xl 2xl:text-4xl">បញ្ជីទស្សនាវដ្តីដែលមានលិបិក្រមឆ្នាំ ២០២៣</div>
           <div class="w-24 lg:w-60 border-b-2 lg:border-b-4 border-b-active_color"></div>
         </div>
         <div class="">
-          <div class="w-fit mx-auto text-center text-active_color font-hanuman font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">មើលទាំងអស់</div>
+          <div class="w-fit mx-auto text-center text-active_color font-hanuman font-bold text-lg lg:text-xl xl:text-3xl 2xl:text-4xl">មើលទាំងអស់</div>
           <div class="w-12 lg:w-20 border-b-2 lg:border-b-4 border-b-active_color"></div>
         </div>
       </div>
