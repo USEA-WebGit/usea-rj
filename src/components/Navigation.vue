@@ -1,6 +1,9 @@
 <template>
-  <div class="mb-5 md:left-0 md:mt-20 hidden lg:block">
-    <div class="w-fit sticky top-0 rounded-3xl bg-white p-6 shadow-md">
+  <div class="mb-5 pt-3 lg:pt-0 md:left-0 md:mt-20">
+    <!-- <div class="w-full flex sticky top-0 rounded-3xl bg-white p-6 shadow-md lg:hidden">
+      Hello world
+    </div> -->
+    <div class="w-fit sticky top-0 rounded-3xl bg-white p-6 shadow-md hidden lg:block">
       <ul
         class="font-hanuman md:text-xl lg:text-xl xl:text-2xl text-center text-nowrap text-sm sm:text-base mx-auto w-full"
       >
