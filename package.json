@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@material-tailwind/html": "^2.2.2",
     "axois": "^0.0.1-security",
     "chart.js": "^4.4.2",
     "gsap": "^3.12.5",
