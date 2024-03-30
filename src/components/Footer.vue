@@ -64,7 +64,7 @@
               </li>
             </div>
             <div class="md:ml-4">
-              <li class="flex items-center footer_link mt-3 md:mt-0" @click="toggleMenu('check')">
+              <li class="flex items-center footer_link Footer_mt-3 md:mt-0" @click="toggleMenu('check')">
               <div class="ml-2 md:ml-3">ដំណើរការ</div>
               </li>
               <li class="footer_link mt-3 md:mt-8">

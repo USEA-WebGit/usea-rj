@@ -1,40 +1,60 @@
 <template>
+  <div class="z-10">
+    <!-- main div -->
+    <div class="w-full z-10 bg-white flex justify-between items-center py-2 px-4 navbar fixed shadow-sm lg:hidden">
+      <div class="flex justify-start items-center">
+        <router-link :to="{name : 'home'}">
+          <img src="../assets/img/logo/journal-logo.png" alt="usea research journal logo" class="w-[70px] h-[70px] object-contain">
+        </router-link>
+        <div class="uppercase ml-2 text-usea_primary font-semibold">USEA Research journal</div>
+      </div>
+      <div class="text-2xl cursor-pointer hover:text-usea_primary" @click="toggleSidebar"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="w-full z-10 bg-white flex justify-between items-center py-2 px-4 lg:hidden">
+      <div class="flex justify-start items-center">
+        <router-link :to="{name : 'home'}">
+          <img src="../assets/img/logo/journal-logo.png" alt="usea research journal logo" class="w-[70px] h-[70px] object-contain">
+        </router-link>
+        <div class="uppercase ml-2 text-usea_primary font-semibold">USEA Research journal</div>
+      </div>
+      <div class="text-2xl cursor-pointer hover:text-usea_primary" @click="toggleSidebar"><i class="fa-solid fa-bars"></i></div>
+    </div>
     <div :class="{ 'hidden': active }" @touchstart="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd">
-      <div class="w-full h-full bg-black/20 backdrop-blur-sm dark:bg-slate-900/80 fixed lg:hidden top-0 z-10" @click.self="toggleSidebar"></div>
+      <div class="w-full h-full bg-black/20 backdrop-blur-sm dark:bg-slate-900/80 overflow-hidden fixed lg:hidden top-0 z-10" @click.self="toggleSidebar"></div>
       <div class="w-fit bg-white h-full fixed flex lg:hidden top-0 z-20">
         <div class="w-full top-0 p-10 flex overflow-x-hidden overflow-y-auto">
           <div>
             <ul class="font-hanuman md:text-xl lg:text-2xl text-center text-nowrap mx-auto w-fit h-fit text-base sm:text-lg">
-              <li class="menu">
+              <li class="menu" @click="toggleSidebar">
                 <router-link :to="{name : 'home'}" class="w-100 flex items-center"><i class="fa-solid fa-house-chimney"></i> <div class="ml-2 md:ml-3">ទំព័រដើម</div></router-link>
               </li>
-              <li class="menu">
+              <li class="menu" @click="toggleSidebar">
                 <router-link :to="{name : 'about'}" class="w-100 flex items-center"> <i class="fa-solid fa-bars"></i><div class="ml-2 md:ml-3 my-auto">អំពីទស្សនាវដ្ដីស្រាវជ្រាវ</div></router-link>
               </li>
               <li class="menu" @click="toggleMenu('home')">
               <i class="fa-solid fa-book-open"></i> <div class="ml-2 md:ml-3">ការបោះពុម្ភ</div> <i v-if="activeMenu !== 'home'" class="ml-2 fa-solid fa-angle-down"></i> <i class="ml-2 md:ml-3 fa-solid fa-angle-right" v-else></i>
             </li>
             <div class="ml-3 list-menu" :class="{'show': activeMenu == 'home'}">
-                <li class="menu">ក្រុមព្រឹក្សាទស្សនាវដ្ដីស្រាវជ្រាវ</li>
-                <li class="menu">គោលការណ៍នៃការបោះពុម្ភ</li>
-                <li class="menu">ក្រមសីលធម៌នៃការបោះពុម្ភ</li>
-                <li class="menu">អត្ថប្រយោជន៍នៃការណ៍បោះពុម្ភ</li>
+                <li class="menu" @click="toggleSidebar">ក្រុមព្រឹក្សាទស្សនាវដ្ដីស្រាវជ្រាវ</li>
+                <li class="menu" @click="toggleSidebar">គោលការណ៍នៃការបោះពុម្ភ</li>
+                <li class="menu" @click="toggleSidebar">ក្រមសីលធម៌នៃការបោះពុម្ភ</li>
+                <li class="menu" @click="toggleSidebar">អត្ថប្រយោជន៍នៃការណ៍បោះពុម្ភ</li>
             </div>
               <li class="menu" @click="toggleMenu('study')">
               <i class="fa-solid fa-book"></i> <div class="ml-2 md:ml-3">សេចក្ដីណែនាំ</div> <i v-if="activeMenu !== 'study'" class="ml-2 fa-solid fa-angle-down"></i> <i v-else class="ml-2 md:ml-3 fa-solid fa-angle-right"></i>
             </li>
             <div class="ml-3 list-menu" :class="{'show': activeMenu == 'study'}">
-                <li class="menu">សេចក្ដីណែនាំអ្នកនិពន្ធ</li>
-                <li class="menu">សេចក្ដីណែនាំអ្នកត្រួតពិនិត្យ</li>
+                <li class="menu" @click="toggleSidebar">សេចក្ដីណែនាំអ្នកនិពន្ធ</li>
+                <li class="menu" @click="toggleSidebar">សេចក្ដីណែនាំអ្នកត្រួតពិនិត្យ</li>
             </div>
             <li class="menu" @click="toggleMenu('check')">
             <i class="fa-solid fa-spinner"></i> <div class="ml-2 md:ml-3">ដំណើរការ</div> <i v-if="activeMenu !== 'check'" class="ml-2 fa-solid fa-angle-down"></i> <i v-else class="ml-2 md:ml-3 fa-solid fa-angle-right"></i>
             </li>
             <div class="ml-3 list-menu" :class="{'show': activeMenu == 'check'}">
-                <li class="menu">បញ្ជូនអត្ថបទស្រាវជ្រាវ</li>
-                <li class="menu">ការត្រួពិនិត្យស្រាវជ្រាវ</li>
+                <li class="menu" @click="toggleSidebar">បញ្ជូនអត្ថបទស្រាវជ្រាវ</li>
+                <li class="menu" @click="toggleSidebar">ការត្រួពិនិត្យស្រាវជ្រាវ</li>
             </div>
-            <li class="menu">
+            <li class="menu" @click="toggleSidebar">
               <router-link :to="{name : 'home'}" class="w-100 flex items-center"><i class="fa-solid fa-arrow-down-a-z"></i> <div class="ml-2 md:ml-3">សន្ទានុក្រមស្រាវជ្រាវ</div></router-link>
             </li>
             </ul>
@@ -97,7 +117,7 @@
                   </div>
                   <!-- end navigation -->
                   <div class="flex mt-5 mb-1 pb-5 w-fit mx-auto">
-                      <div class="btn">Register</div><div class="btn ml-1 md:ml-3">Login</div>
+                      <div class="btn_login" @click="toggleSidebar">Register</div><div class="btn_login ml-1 md:ml-3" @click="toggleSidebar">Login</div>
                   </div>
                 </div>
 
@@ -111,14 +131,18 @@
         </div>
       </div>
     </div>
+
+    <!-- end main div -->
+  </div>
 </template>
   
 <script>
 import Chart from 'chart.js/auto';
+
 export default {
 data() {
     return {
-    active: false,
+    active: true,
     activeMenu : null,
     startX: 0,
     endX: 0,
@@ -127,6 +151,23 @@ data() {
 },
 mounted() {
   this.renderChart();
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    let theEnd = '0';
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > parseInt(theEnd)) {
+        navbar.style.transition = 'top 0.4s ease';
+        navbar.style.top = '-90px';
+      } else {
+        navbar.style.top = '0';
+      }
+      theEnd = scrollTop + 'px'; // Update theEnd with the current scrollTop value
+    });
+  } else {
+    console.error("Navbar element not found.");
+  };
 },
 methods: {
     toggleSidebar() {
