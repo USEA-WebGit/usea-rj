@@ -2,9 +2,11 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Journal_Board from "../views/Journal-Board.vue";
-import Publication_Policy from "../views/Publication-Policy.vue";
-import Publication_Benefit from "../views/Publication-Benefit.vue";
-import Publication_Ethics from "../views/Publication-Ethics.vue";
+import Publication_Policy from "../views/publication/Publication-Policy.vue";
+import Publication_Benefit from "../views/publication/Publication-Benefit.vue";
+import Publication_Ethics from "../views/publication/Publication-Ethics.vue";
+import Instruction_Authors from "../views/instructions/Instruction-Authors.vue";
+import Instruction_Expert from "../views/instructions/Instruction-Expert.vue";
 
 const routes = [
   {
@@ -36,6 +38,16 @@ const routes = [
     path: "/publication-ethics",
     name: "publication-ethics",
     component: Publication_Ethics,
+  },
+  {
+    path: "/instructions-authors",
+    name: "instruction-authors",
+    component: Instruction_Authors,
+  },
+  {
+    path: "/instructions-experts",
+    name: "instruction-experts",
+    component: Instruction_Expert,
   },
 ];
 

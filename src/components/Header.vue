@@ -7,37 +7,37 @@ export default {
     return {
       slides: [
         {
-          imageSrc: "./src/assets/img/slide/slide1.png",
+          imageSrc: "../src/assets/img/slide/slide1.png",
           imageAlt: "Slide 1",
           title: "Hello World",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
         },
         {
-          imageSrc: "./src/assets/img/slide/slide2.png",
+          imageSrc: "../src/assets/img/slide/slide2.png",
           imageAlt: "Slide 2",
           title: "Hello Vue",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
         },
         {
-          imageSrc: "./src/assets/img/slide/slide3.png",
+          imageSrc: "../src/assets/img/slide/slide3.png",
           imageAlt: "Slide 3",
           title: "Hello Vue",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
         },
         {
-          imageSrc: "./src/assets/img/slide/slide4.png",
+          imageSrc: "../src/assets/img/slide/slide4.png",
           imageAlt: "Slide 3",
           title: "Hello Vue",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
         },
         {
-          imageSrc: "./src/assets/img/slide/slide5.png",
+          imageSrc: "../src/assets/img/slide/slide5.png",
           imageAlt: "Slide 3",
           title: "Hello Vue",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
         },
         {
-          imageSrc: "./src/assets/img/slide/slide6.png",
+          imageSrc: "../src/assets/img/slide/slide6.png",
           imageAlt: "Slide 3",
           title: "Hello Vue",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
@@ -96,7 +96,7 @@ export default {
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div v-for="(slide, index) in slides" :key="index" class="carousel-item" :class="{ 'active': index === 0 }">
-          <img :src="slide.imageSrc" class="d-block w-100 aspect-video" :alt="slide.imageAlt">
+          <img :src="slide.imageSrc" class="d-block w-100 aspect-video 2xl:h-[45rem]" :alt="slide.imageAlt">
           <div class="carousel-caption d-none d-md-block text-center position-absolute top-[40%] start-20 w-6/12">
             <h1 class="text-2xl">{{ slide.title }}</h1>
             <p>{{ slide.text }}</p>

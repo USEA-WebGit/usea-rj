@@ -15,12 +15,18 @@
         </li>
         <li class="menu">
           <router-link :to="{ name: 'about' }" class="w-100 flex items-center">
-            <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
             <div class="ml-2 md:ml-3 my-auto">
               អំពីទស្សនាវដ្ដីស្រាវជ្រាវ
             </div></router-link
           >
         </li>
+        <li class="menu">
+            <router-link :to="{ name: 'journal-board' }">
+              <i class="fa-solid fa-users"></i>
+              ក្រុមព្រឹក្សាទស្សនាវដ្ដីស្រាវជ្រាវ
+            </router-link>
+          </li>
         <li class="menu" @click="toggleMenu('home')">
           <i class="fa-solid fa-book-open"></i>
           <div class="ml-2 md:ml-3">ការបោះពុម្ភ</div>
@@ -31,11 +37,7 @@
           <i class="ml-2 md:ml-3 fa-solid fa-angle-right" v-else></i>
         </li>
         <div class="ml-5 list-menu" :class="{ show: activeMenu == 'home' }">
-          <li class="menu">
-            <router-link :to="{ name: 'journal-board' }">
-              ក្រុមព្រឹក្សាទស្សនាវដ្ដីស្រាវជ្រាវ
-            </router-link>
-          </li>
+          
           <li class="menu">
             <router-link :to="{ name: 'publication-policy' }">
               គោលការណ៍នៃការបោះពុម្ភ
@@ -62,8 +64,16 @@
           <i v-else class="ml-2 md:ml-3 fa-solid fa-angle-right"></i>
         </li>
         <div class="ml-5 list-menu" :class="{ show: activeMenu == 'study' }">
-          <li class="menu">សេចក្ដីណែនាំអ្នកនិពន្ធ</li>
-          <li class="menu">សេចក្ដីណែនាំអ្នកត្រួតពិនិត្យ</li>
+          <li class="menu">
+            <router-link :to="{ name: 'instruction-authors' }">
+              សេចក្ដីណែនាំអ្នកនិពន្ធ
+            </router-link>
+          </li>
+          <li class="menu">
+            <router-link :to="{ name: 'instruction-experts' }">
+              សេចក្ដីណែនាំអ្នកត្រួតពិនិត្យ
+            </router-link>
+          </li>
         </div>
         <li class="menu" @click="toggleMenu('check')">
           <i class="fa-solid fa-spinner"></i>
