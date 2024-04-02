@@ -9,38 +9,38 @@ export default {
         {
           imageSrc: "../src/assets/img/slide/slide1.png",
           imageAlt: "Slide 1",
-          title: "Hello World",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
+          title: "សូមស្វាគមន៍មកកាន់ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ",
+          text: "សាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ បានបង្កើតទស្សនាវដ្ដីស្រាវជ្រាវសម្រាប់សកលវិទ្យាល័យ មានឈ្មោះថា ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ ឈ្មោះកាត់ជាខេមរភាសាថា‌ ទ.ស.ស.ស.អ. និងមានឈ្មោះជាភាសាអង់គ្លេសថា USEA Research Journal ឬឈ្មោះកាត់ជាភាសាអង់គ្លេសថា USEA RJ។"
         },
         {
           imageSrc: "../src/assets/img/slide/slide2.png",
           imageAlt: "Slide 2",
-          title: "Hello Vue",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
+          title: "សូមស្វាគមន៍មកកាន់ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ",
+          text: "សាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ បានបង្កើតទស្សនាវដ្ដីស្រាវជ្រាវសម្រាប់សកលវិទ្យាល័យ មានឈ្មោះថា ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ ឈ្មោះកាត់ជាខេមរភាសាថា‌ ទ.ស.ស.ស.អ. និងមានឈ្មោះជាភាសាអង់គ្លេសថា USEA Research Journal ឬឈ្មោះកាត់ជាភាសាអង់គ្លេសថា USEA RJ។"
         },
         {
           imageSrc: "../src/assets/img/slide/slide3.png",
           imageAlt: "Slide 3",
-          title: "Hello Vue",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
+          title: "សូមស្វាគមន៍មកកាន់ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ",
+          text: "សាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ បានបង្កើតទស្សនាវដ្ដីស្រាវជ្រាវសម្រាប់សកលវិទ្យាល័យ មានឈ្មោះថា ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ ឈ្មោះកាត់ជាខេមរភាសាថា‌ ទ.ស.ស.ស.អ. និងមានឈ្មោះជាភាសាអង់គ្លេសថា USEA Research Journal ឬឈ្មោះកាត់ជាភាសាអង់គ្លេសថា USEA RJ។"
         },
         {
           imageSrc: "../src/assets/img/slide/slide4.png",
           imageAlt: "Slide 3",
-          title: "Hello Vue",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
+          title: "សូមស្វាគមន៍មកកាន់ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ",
+          text: "សាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ បានបង្កើតទស្សនាវដ្ដីស្រាវជ្រាវសម្រាប់សកលវិទ្យាល័យ មានឈ្មោះថា ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ ឈ្មោះកាត់ជាខេមរភាសាថា‌ ទ.ស.ស.ស.អ. និងមានឈ្មោះជាភាសាអង់គ្លេសថា USEA Research Journal ឬឈ្មោះកាត់ជាភាសាអង់គ្លេសថា USEA RJ។"
         },
         {
           imageSrc: "../src/assets/img/slide/slide5.png",
           imageAlt: "Slide 3",
-          title: "Hello Vue",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
+          title: "សូមស្វាគមន៍មកកាន់ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ",
+          text: "សាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ បានបង្កើតទស្សនាវដ្ដីស្រាវជ្រាវសម្រាប់សកលវិទ្យាល័យ មានឈ្មោះថា ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ ឈ្មោះកាត់ជាខេមរភាសាថា‌ ទ.ស.ស.ស.អ. និងមានឈ្មោះជាភាសាអង់គ្លេសថា USEA Research Journal ឬឈ្មោះកាត់ជាភាសាអង់គ្លេសថា USEA RJ។"
         },
         {
           imageSrc: "../src/assets/img/slide/slide6.png",
           imageAlt: "Slide 3",
-          title: "Hello Vue",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit illo provident numquam cum fuga cumque doloremque in facilis aliquid voluptatem quisquam error autem ullam qui, commodi fugiat voluptate ad!"
+          title: "សូមស្វាគមន៍មកកាន់ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ",
+          text: "សាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ បានបង្កើតទស្សនាវដ្ដីស្រាវជ្រាវសម្រាប់សកលវិទ្យាល័យ មានឈ្មោះថា ទស្សនាវដ្ដីស្រាវជ្រាវសាកលវិទ្យាល័យ សៅស៍អ៊ីសថ៍អេយសៀ ឈ្មោះកាត់ជាខេមរភាសាថា‌ ទ.ស.ស.ស.អ. និងមានឈ្មោះជាភាសាអង់គ្លេសថា USEA Research Journal ឬឈ្មោះកាត់ជាភាសាអង់គ្លេសថា USEA RJ។"
         },
       ],
       currentIndex: 0,
@@ -101,7 +101,7 @@ export default {
             <h1 class="text-2xl">{{ slide.title }}</h1>
             <p>{{ slide.text }}</p>
             <div class="mt-3">
-              <router-link :to="{name : 'home'}" class="slide_button">Read More</router-link>
+              <router-link :to="{name : 'home'}" class="slide_button">អានបន្ថែម</router-link>
             </div>
           </div>
         </div>
