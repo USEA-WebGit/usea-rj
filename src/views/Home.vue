@@ -31,7 +31,7 @@
         </div>
         <div>
           <div class="text-active_color font-hanuman font-bold text-lg lg:text-xl xl:text-2xl 2xl:text-2xl">អានច្រើនបំផុត</div>
-          <div class="w-16 border-b-2 lg:border-b-4 border-b-usea_primary"></div>
+          <!-- <div class="w-16 border-b-2 lg:border-b-4 border-b-usea_primary"></div> -->
         </div>
       </div>
 
@@ -114,7 +114,7 @@
         </div>
 
         <div class="w-fit mx-auto mt-16">
-          <router-link :to="{name : 'home'}" class="card_button">Read More</router-link>
+          <router-link :to="{name : 'about'}" class="card_button">Read More</router-link>
         </div>
       </div>
       <!-- end About rj -->

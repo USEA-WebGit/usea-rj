@@ -98,8 +98,8 @@ export default {
         <div v-for="(slide, index) in slides" :key="index" class="carousel-item" :class="{ 'active': index === 0 }">
           <img :src="slide.imageSrc" class="d-block w-100 aspect-video 2xl:h-[45rem]" :alt="slide.imageAlt">
           <div class="carousel-caption d-none d-md-block text-center position-absolute top-[40%] start-20 w-6/12">
-            <h1 class="text-2xl">{{ slide.title }}</h1>
-            <p>{{ slide.text }}</p>
+            <h1 class="text-2xl font-hanuman">{{ slide.title }}</h1>
+            <p class="font-hanuman">{{ slide.text }}</p>
             <div class="mt-3">
               <router-link :to="{name : 'home'}" class="slide_button">អានបន្ថែម</router-link>
             </div>

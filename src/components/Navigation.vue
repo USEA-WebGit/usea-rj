@@ -26,7 +26,7 @@
               <i class="fa-solid fa-users"></i>
               ក្រុមព្រឹក្សាទស្សនាវដ្ដីស្រាវជ្រាវ
             </router-link>
-          </li>
+        </li>
         <li class="menu" @click="toggleMenu('home')">
           <i class="fa-solid fa-book-open"></i>
           <div class="ml-2 md:ml-3">ការបោះពុម្ភ</div>
@@ -88,11 +88,9 @@
           <li class="menu">បញ្ជូនអត្ថបទស្រាវជ្រាវ</li>
           <li class="menu">ការត្រួពិនិត្យស្រាវជ្រាវ</li>
         </div>
-        <li class="menu">
-          <router-link :to="{ name: 'home' }" class="w-100 flex items-center"
-            ><i class="fa-solid fa-arrow-down-a-z"></i>
-            <div class="ml-2 md:ml-3">សន្ទានុក្រមស្រាវជ្រាវ</div></router-link
-          >
+        <li class="menu">          
+          <i class="fa-solid fa-arrow-down-a-z"></i>
+          <div class="ml-2 md:ml-3">សន្ទានុក្រមស្រាវជ្រាវ</div>
         </li>
       </ul>
       <div
@@ -164,17 +162,17 @@
       <div
         class="mt-4 border-t-2 font-hanuman md:text-xl lg:text-xl xl:text-2xl text-nowrap mx-auto h-full w-full text-sm sm:text-base"
       >
-        <div class="text_menu mt-10 pt-5">
+        <!-- <div class="text_menu mt-10 pt-5">
           <i class="fa-solid fa-calendar-days"></i>
           <div class="ml-2 md:ml-3">ដាក់ស្នើសាត្រាស្លឹករឹត</div>
-        </div>
+        </div> -->
       </div>
-      <div
+      <!-- <div
         class="flex text-usea_primary items-center text-left p-2 text-sm sm:lg md:text-xl"
       >
         <i class="fa-solid fa-envelope"></i>
         <div class="ml-2 md:ml-3">usea.rj@usea.edu.kh</div>
-      </div>
+      </div> -->
 
       <div class="bg-container_color mt-3 py-3 px-4 rounded-lg">
         <div class="flex gap-x-3">
